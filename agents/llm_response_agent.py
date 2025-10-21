@@ -7,7 +7,7 @@ from core.mcp_protocol import create_mcp_message
 try:
     # --- THIS IS THE CHANGE ---
     # Read the API key from the environment variable you just set on Render
-    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+    GOOGLE_API_KEY = os.environ.get("API_KEY")
     
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('models/gemini-pro-latest')
