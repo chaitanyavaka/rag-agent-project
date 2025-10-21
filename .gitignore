@@ -1,0 +1,22 @@
+ # 1. Virtual Environment
+# This is your 'a-r-m' folder which contains all the packages.
+a-r-m/
+
+# 2. Python Cache
+# These are temporary files created by Python.
+__pycache__/
+*.pyc
+
+# 3. Environment Variables
+# This file contains secret keys, passwords, and API keys.
+# It should NEVER be committed to version control.
+.env
+
+# 4. IDE / Editor settings
+# This ignores personal editor settings (e.g., for VS Code).
+.vscode/
+
+# 5. Common Python folders
+build/
+dist/
+*.egg-info/

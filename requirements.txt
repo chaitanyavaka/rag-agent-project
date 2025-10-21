@@ -1,0 +1,8 @@
+Flask
+chromadb
+docx
+google-generativeai
+langchain
+pandas
+pypdf
+python-pptx
