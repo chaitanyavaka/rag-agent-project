@@ -1,12 +1,14 @@
-import os
+import os  # <-- ADD THIS IMPORT
 import google.generativeai as genai
 from .base_agent import BaseAgent
 from core.mcp_protocol import create_mcp_message
 
 # --- Configure the Gemini API ---
-# IMPORTANT: PASTE YOUR PRIVATE API KEY AND MODEL NAME HERE
 try:
-    GOOGLE_API_KEY = "AIzaSyAz39c7NPFcJ4LE1wdg0oGT0xK_TSLDMpM"
+    # --- THIS IS THE CHANGE ---
+    # Read the API key from the environment variable you just set on Render
+    GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
+    
     genai.configure(api_key=GOOGLE_API_KEY)
     model = genai.GenerativeModel('models/gemini-pro-latest')
 except Exception as e:
