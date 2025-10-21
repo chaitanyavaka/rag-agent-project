@@ -1,9 +1,10 @@
 Flask
 chromadb
-docx
+python-docx
 google-generativeai
 langchain
 pandas
 pypdf
 python-pptx
 gunicorn
+markdown
