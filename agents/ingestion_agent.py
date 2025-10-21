@@ -1,7 +1,7 @@
 from .base_agent import BaseAgent
 from core.doc_parser import parse_document
 from core.mcp_protocol import create_mcp_message
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter # <-- THIS LINE IS UPDATED
 
 class IngestionAgent(BaseAgent):
     """Agent responsible for ingesting and preprocessing documents."""
